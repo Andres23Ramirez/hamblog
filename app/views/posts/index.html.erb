@@ -1,0 +1,11 @@
+<h1>Hamblog</h1>
+
+<% @posts.each do |post| %>
+	
+	<h3><%= Titulo:%></h3>
+	<%= @post.title%>
+	<p><%= Contenido:%></p>
+	<%= @post.body%>
+
+	<%= link_to "Leer el Post", post_path(post)%>
+	<% end %>
